@@ -1,0 +1,25 @@
+[debug] [2023-05-12T15:47:01.595Z] ----------------------------------------------------------------------
+[debug] [2023-05-12T15:47:01.596Z] Command:       /Users/mariacamilasandovalsantana/.nvm/versions/node/v16.20.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-05-12T15:47:01.596Z] CLI Version:   11.25.3
+[debug] [2023-05-12T15:47:01.596Z] Platform:      darwin
+[debug] [2023-05-12T15:47:01.596Z] Node Version:  v16.20.0
+[debug] [2023-05-12T15:47:01.598Z] Time:          Fri May 12 2023 11:47:01 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-05-12T15:47:01.598Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-12T15:47:01.632Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-12T15:47:01.632Z] > authorizing via signed-in user (milasandovalsantana@gmail.com)
+[debug] [2023-05-12T15:47:01.632Z] [iam] checking project freeraffledb for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-12T15:47:01.633Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/freeraffledb:testIamPermissions [none]
+[debug] [2023-05-12T15:47:01.633Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/freeraffledb:testIamPermissions x-goog-quota-user=projects/freeraffledb
+[debug] [2023-05-12T15:47:01.633Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/freeraffledb:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-12T15:47:02.047Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/freeraffledb:testIamPermissions 200
+[debug] [2023-05-12T15:47:02.048Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/freeraffledb:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-12T15:47:02.049Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/freeraffledb [none]
+[debug] [2023-05-12T15:47:02.303Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/freeraffledb 200
+[debug] [2023-05-12T15:47:02.303Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/freeraffledb {"projectId":"freeraffledb","projectNumber":"1044998084016","displayName":"freeraffledb","name":"projects/freeraffledb","resources":{"hostingSite":"freeraffledb"},"state":"ACTIVE","etag":"1_987baab5-d278-4d97-b24e-892b6b456aaf"}
+[debug] [2023-05-12T15:47:16.302Z] TypeError: Cannot read properties of null (reading 'endsWith')
+    at ɵcodegenPublicDirectory (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:206:56)
+    at async prepareFrameworks (/usr/local/lib/node_modules/firebase-tools/lib/frameworks/index.js:269:13)
+    at async deploy (/usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.

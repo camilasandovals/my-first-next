@@ -1,3 +1,4 @@
+// import Image from 'next/image';
 async function getData() {
     const res = await fetch('https://api.sampleapis.com/beers/ale')
     if(!res.ok) {
@@ -13,7 +14,7 @@ export default async function Page(){
             {data.map(beer => (
                 <div key={beer.id}>
                     <h2>{beer.name}</h2>
-                    <img src={beer.image} />
+                    {/* <Image src={beer.image} alt="beer image" width={30} height={30}/> */}
                     <p>price: {beer.price}</p>
                 </div>
             ))}
